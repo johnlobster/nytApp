@@ -7,6 +7,21 @@ background-size: cover;
 
 }
 
+<<<<<<< HEAD
 .articleClass{
     margin-top: 20px;
 }
+=======
+h1{
+    text-align: center;
+}
+
+/* .container {
+background-color: aqua;    
+} */
+
+/* background test */
+/* #retrieve records-form {
+    float: right;
+} */
+>>>>>>> ddf97429ae78c0752913144835ee4c8a0b4751dc
