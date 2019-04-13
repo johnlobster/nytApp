@@ -15,7 +15,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <div class="container">
-        <h1>NYT News Search</h1>
+        <h1>New York Times News Search</h1>
 
         <!-- Rendered Buttons will get Dumped Here  -->
         <div id="buttons-view"></div>
@@ -24,7 +24,21 @@
             <label for="News-input">NYT News-Search</label>
             <input type="text" id="News-input">
             
-        <div class="newsreturn">
+        <form id="retrieve records-form"></form>
+                <label for="News-input">Number Records to Retrieve</label>
+                <input type="text" id="News-input">
+
+        <form id="startYear-form">
+                <label for="News-input">Start Year (Optional)</label>
+                <input type="text" id="News-input">
+
+        <form id="EndYear-form">
+                <label for="News-input">End Year (Optional)</label>
+                <input type="text" id="News-input">
+
+
+
+            <div id="newsreturn">
             <p>pull info back</p>
         </div>
 
