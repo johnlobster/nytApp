@@ -15,14 +15,18 @@ function searchArticles(searchTerm) {
         url: apiURL,
         method: "GET"
     }).then(function (response) {
+
+        $("#newsreturn").empty(); // remove all previous data
         for (i = 0; i < numberOfArticles; i++) {
             var newDiv = $("<div>");
             var aTag = $("<a>");
             aTag.attr("href", response.response.docs[i].web_url);
+            aTag.text(response.response.docs[i].web_url);
             var h6Tag = $("<h6>");
-            h6Tag.text(response.response.docs[i], headline.main);
-            newDiv.append(aTag).append(h6Tag);
+            h6Tag.text(response.response.docs[i].headline.main);
+            newDiv.append(h6Tag).append(aTag);
             console.log(response.response.docs[i]);
+            $("#newsreturn").append(newDiv);
         }
         // console.log(apiURL);
     });
@@ -35,5 +39,5 @@ searchArticles("trump");
 // display the results
 // make an api call
 var newsButtons
- 
+
 
