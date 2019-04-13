@@ -7,4 +7,6 @@
 // get the search Term
 // display the results
 // make an api call
+var newsButtons
+ 
 
