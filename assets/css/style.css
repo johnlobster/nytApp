@@ -6,3 +6,7 @@ background-size: cover;
 -o-background-size: cover;
 
 }
+
+.articleClass{
+    margin-top: 20px;
+}
